@@ -1,12 +1,12 @@
-# React + Vite
+¿Qué aprendí?
+Aprendí lo que es y cómo funciona React-Route, a implementar sus componentes para una página sencilla con una navbar y sus links y a utilizar las rutas dinámicas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¿Qué dificultades encontré?
+Tuve problemas a la hora de poner las rutas del home, about y contact, y al momento de hacer que la navbar se visualice en todo el ancho de la pantalla, pero eso fué solamente "problema" de los estilos.
 
-Currently, two official plugins are available:
+¿Cómo resolví el enrutamiento?
+Para resolcver eso, usé las etiquetas de '<link>' en lugar de las etiquetas '<a>', la diferencia es que las etiquetas de '<a>' hacen que la página se refresque completa, y las etiquetas de '<link>' pueden refrescar sólamente el componente, ésto hace que no se pierda el estado de la app web, a esto se le llama SPA(Single Page Application), por lo tanto, es mucho mejor que la forma tradicional de hacer páginas web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Saúl Valenzuela Osuna
+LISI 4-1
