@@ -14,9 +14,10 @@ function Navbar() {
       gap: "20px",
       color: "white",
     }}>
-      <Link to="/" style={{ marginRight: "15px", color: "black" }}>Home</Link>
-      <Link to="/about" style={{ marginRight: "15px", color: "black" }}>About</Link>
+      <Link to="/" style={{ color: "black" }}>Home</Link>
+      <Link to="/about" style={{ color: "black" }}>About</Link>
       <Link to="/contact" style={{ color: "black" }}>Contact</Link>
+      <Link to="/map" style={{ color: "black" }}>Map</Link>
     </nav>
   );
 }

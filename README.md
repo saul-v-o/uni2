@@ -1,11 +1,11 @@
-¿Qué aprendí?
-Aprendí lo que es y cómo funciona React-Route, a implementar sus componentes para una página sencilla con una navbar y sus links y a utilizar las rutas dinámicas.
+Este proyecto trató sobre utilizar la API de Google Maps y mediante componentes, colocar un mapa dentro de la página principal que estoy haciendo, con una ubicación específica (la FIMAZ), un marker y un cuadro de diálogo para cuando se haga click en el marker.
 
-¿Qué dificultades encontré?
-Tuve problemas a la hora de poner las rutas del home, about y contact, y al momento de hacer que la navbar se visualice en todo el ancho de la pantalla, pero eso fué solamente "problema" de los estilos.
 
-¿Cómo resolví el enrutamiento?
-Para resolcver eso, usé las etiquetas de '<link>' en lugar de las etiquetas '<a>', la diferencia es que las etiquetas de '<a>' hacen que la página se refresque completa, y las etiquetas de '<link>' pueden refrescar sólamente el componente, ésto hace que no se pierda el estado de la app web, a esto se le llama SPA(Single Page Application), por lo tanto, es mucho mejor que la forma tradicional de hacer páginas web.
+¿Cómo correrlo localmente?
+1. Primero debes de clonar el repositorio.
+2. Debes instalar las dependencias.
+3. Tienes que hacer el archivo ".env" en la raíz del directorio y colocal lo siguiente: VITE_GOOGLE_MAPS_API_KEY=tu_clave_de_api.
+4. Finalmente debes correrlo con "npm run dev".
 
 
 Saúl Valenzuela Osuna

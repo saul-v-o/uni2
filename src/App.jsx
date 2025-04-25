@@ -3,25 +3,28 @@ import NavBar from "./components/Navbar";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import Mapa from "./components/Mapa";
 
 function App() {
   return (
-    <div style={{ 
-      display: "flex", 
-      flexDirection: "column", 
-      alignItems: "center", 
-      width: "100vw",
-      paddingTop: "60px"
-    }}>
     <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
-    </div>
+  <div style={{ 
+    display: "flex", 
+    flexDirection: "column", 
+    alignItems: "center", 
+    width: "100vw",
+    paddingTop: "60px"
+  }}>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/map" element={<Mapa />} />
+    </Routes>
+  </div>
+</Router>
+
   );
 }
 
