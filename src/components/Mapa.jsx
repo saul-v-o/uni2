@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import {
   GoogleMap,
-  useJsApiLoader,
   Marker,
   InfoWindow,
 } from '@react-google-maps/api';
@@ -18,17 +17,12 @@ const center = {
 };
 
 function Mapa() {
-  const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY, 
-  });
-
   const [selected, setSelected] = useState(null);
 
-  return isLoaded ? (
+  return (
     <div style={{ width: "100%", maxWidth: "800px", margin: "auto" }}>
       <GoogleMap
-        mapContainerStyle={{ width: '100%', height: '400px', minHeight: '400px' }}
+        mapContainerStyle={containerStyle}
         center={center}
         zoom={12}
         onClick={() => setSelected(null)}
@@ -44,8 +38,6 @@ function Mapa() {
         )}
       </GoogleMap>
     </div>
-  ) : (
-    <p className="text-center my-4">Cargando mapa...</p>
   );
 }
 
