@@ -5,6 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Mapa from "./components/Mapa";
 import MapaRuta from "./components/MapaRuta";
+import MapaClusters from "./components/MapaClusters";
 import GoogleMapsProvider from "./components/GoogleMapsProvider";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/map" element={<Mapa />} />
             <Route path="/mapRoute" element={<MapaRuta />} />
+            <Route path="/mapClusters" element={<MapaClusters/>}/>
           </Routes>
         </div>
       </Router>
