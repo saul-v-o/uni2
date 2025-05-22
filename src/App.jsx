@@ -8,6 +8,7 @@ import MapaRuta from "./components/MapaRuta";
 import MapaClusters from "./components/MapaClusters";
 import MapaDrawingTools from "./components/MapaDrawingTools";
 import GoogleMapsProvider from "./components/GoogleMapsProvider";
+import MapaDirection from "./components/MapaDirection";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/mapRoute" element={<MapaRuta />} />
             <Route path="/mapClusters" element={<MapaClusters/>}/>
             <Route path="/mapDrawingTools" element={<MapaDrawingTools/>}/>
+            <Route path="/mapDirection" element={<MapaDirection/>}/>
           </Routes>
         </div>
       </Router>

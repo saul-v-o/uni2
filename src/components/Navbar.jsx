@@ -21,6 +21,7 @@ function Navbar() {
       <Link to="/mapRoute" style={{ color: "black" }}>Mapa con Ruta</Link>
       <Link to="/mapClusters" style={{ color: "black" }}>Mapa con Clusters</Link>
       <Link to="/mapDrawingTools" style={{ color: "black" }}>Mapa con Drawing Tools</Link>
+      <Link to="/mapDirection" style={{ color: "black" }}>Mapa con Directions</Link>
     </nav>
   );
 }
