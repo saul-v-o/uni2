@@ -15,13 +15,14 @@ function Navbar() {
       color: "white",
     }}>
       <Link to="/" style={{ color: "black" }}>Home</Link>
-      <Link to="/about" style={{ color: "black" }}>About</Link>
-      <Link to="/contact" style={{ color: "black" }}>Contact</Link>
+    
       <Link to="/map" style={{ color: "black" }}>Map</Link>
       <Link to="/mapRoute" style={{ color: "black" }}>Mapa con Ruta</Link>
       <Link to="/mapClusters" style={{ color: "black" }}>Mapa con Clusters</Link>
       <Link to="/mapDrawingTools" style={{ color: "black" }}>Mapa con Drawing Tools</Link>
       <Link to="/mapDirection" style={{ color: "black" }}>Mapa con Directions</Link>
+      <Link to="/about" style={{ color: "black" }}>About</Link>
+      <Link to="/contact" style={{ color: "black" }}>Contact</Link>
     </nav>
   );
 }

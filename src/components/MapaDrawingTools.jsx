@@ -1,6 +1,10 @@
 // src/components/MapaDrawingTools.jsx
 import React, { useRef, useState } from 'react';
-import { GoogleMap, DrawingManager } from '@react-google-maps/api';
+import {
+  GoogleMap,
+  DrawingManager
+} from '@react-google-maps/api';
+import { Box, Typography, Paper, Divider, Button } from '@mui/material';
 
 const containerStyle = {
   width: '100%',
@@ -8,7 +12,7 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 23.2494, // Mazatlán
+  lat: 23.2494,
   lng: -106.4111,
 };
 
@@ -26,7 +30,11 @@ const MapaDrawingTools = () => {
   };
 
   return (
-    <>
+    <Box sx={{ width: '100%', maxWidth: '900px', mx: 'auto', p: 2 }}>
+      <Typography variant="h4" fontWeight="bold" gutterBottom>
+        Herramientas de Dibujo en Google Maps
+      </Typography>
+
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
@@ -55,10 +63,40 @@ const MapaDrawingTools = () => {
         />
       </GoogleMap>
 
-      <div style={{ textAlign: 'center', marginTop: '10px' }}>
-        <button onClick={clearShapes}>Eliminar formas</button>
-      </div>
-    </>
+      <Box sx={{ textAlign: 'center', mt: 2 }}>
+        <Button variant="contained" color="error" onClick={clearShapes}>
+          Eliminar formas
+        </Button>
+      </Box>
+
+      <Paper elevation={3} sx={{ mt: 4, p: 3, borderRadius: 2 }}>
+        <Typography variant="h6" gutterBottom>
+          📝 Explicación de la Actividad
+        </Typography>
+        <Divider sx={{ mb: 2 }} />
+        <Typography variant="body1" paragraph>
+          <strong>¿Qué se hizo?</strong><br />
+          Se implementó el componente <code>DrawingManager</code> de Google Maps para permitir al usuario dibujar formas como polígonos, rectángulos y líneas en el mapa de Mazatlán.
+        </Typography>
+
+        <Typography variant="body1" paragraph>
+          <strong>¿Qué herramientas/librerías se usaron?</strong><br />
+          - React<br />
+          - @react-google-maps/api<br />
+          - Material UI para el diseño visual
+        </Typography>
+
+        <Typography variant="body1" paragraph>
+          <strong>¿Qué aprendiste?</strong><br />
+          Aprendí a integrar herramientas interactivas de dibujo en un mapa de Google Maps y a gestionar las formas dibujadas para poder eliminarlas dinámicamente.
+        </Typography>
+
+        <Typography variant="body1" paragraph>
+          <strong>¿Qué desafíos enfrentaste?</strong><br />
+          El reto principal fue entender cómo acceder y eliminar las formas creadas dinámicamente, ya que se deben manejar como referencias usando `useRef` y asegurarse de desvincularlas del mapa.
+        </Typography>
+      </Paper>
+    </Box>
   );
 };
 
