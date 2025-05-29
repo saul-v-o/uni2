@@ -10,3 +10,6 @@ Este proyecto trató sobre utilizar la API de Google Maps y mediante componentes
 
 Saúl Valenzuela Osuna
 LISI 4-1
+
+URL para ver la página alojada en mi Github-Page:
+https://saul-v-o.github.io/uni2/
